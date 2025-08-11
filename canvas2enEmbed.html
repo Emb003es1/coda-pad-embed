@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dibujo</title>
+  <script src="https://cdn.jsdelivr.net/npm/signature_pad@4.0.0/dist/signature_pad.umd.min.js"></script>
+</head>
+<body>
+  <canvas id="canvas" style="border:1px solid black; width:500px; height:300px;"></canvas>
+  <button onclick="borrar()">Borrar</button>
+  <script>
+    const canvas = document.getElementById('canvas');
+    canvas.width = 500;
+    canvas.height = 300;
+    const signaturePad = new SignaturePad(canvas);
+
+    function borrar() {
+      signaturePad.clear();
+    }
+  </script>
+</body>
+</html>
